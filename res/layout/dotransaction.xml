@@ -1,0 +1,236 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+        <!-- 交易类型 -->
+        <RelativeLayout
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content" >
+        	<TextView
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_alignParentLeft="true"
+            	android:text="交易类型"
+            	android:textSize="25sp"
+            	android:textStyle="bold" />
+        	<TextView
+            	android:id="@+id/dsp_trans_type"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_alignParentRight="true"
+            	android:text="消费"
+            	android:textSize="25sp"
+            	android:textStyle="bold" />
+    	</RelativeLayout>
+    	<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="3dp"
+        	android:background="#ffffffff" />
+    	<ScrollView 
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent">
+        <LinearLayout
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical">
+    	<!-- 输入金额 -->
+    	<LinearLayout
+    	    android:id="@+id/ll_amount"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="10dp"
+        	android:orientation="vertical"
+        	android:visibility="visible">
+        	<TextView
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="交易金额："
+            	android:textSize="20sp" />
+        	<LinearLayout
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="wrap_content"
+        	    android:orientation="horizontal"
+        	    >
+        	    <EditText
+            		android:id="@+id/input_amount"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:hint="输入交易金额"
+            		android:maxLength="13"
+            		android:numeric="decimal"
+            		android:singleLine="true"
+            		android:text="0.00"
+            		android:textSize="20sp" 
+            		android:layout_weight="4"
+            		/>
+        	    <Button
+        	        android:id="@+id/btn_scan"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:layout_weight="1"
+        	        android:text="扫描"
+        	        android:textSize="20sp"
+        	        android:visibility="visible"
+        	        />
+        	</LinearLayout>
+    	</LinearLayout>
+    	
+    	<!-- 卡号信息 -->
+    	<LinearLayout
+    	    android:id="@+id/ll_cardno"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="10dp"
+        	android:orientation="vertical"
+        	android:visibility="visible">
+        	<TextView
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="卡号信息："
+            	android:textSize="20sp" />
+        	<LinearLayout
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:orientation="horizontal" >
+            	<EditText
+                	android:id="@+id/input_card_no"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:layout_weight="4"
+                	android:hint="手输卡号"
+                	android:textColorHint="@color/blueviolet"
+                	android:maxLength="19"
+                	android:numeric="integer"
+                	android:singleLine="true"
+                	android:textSize="20sp" />
+            	<Button
+                	android:id="@+id/swipe_card"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:layout_weight="1"
+                	android:text="刷卡"
+                	android:textSize="20sp"
+                	android:visibility="visible" />
+        	</LinearLayout>
+        	
+        	<!-- 有效期 & CVD -->
+        	<LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+            	<LinearLayout
+            		android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+            		android:orientation="vertical" 
+            		android:layout_weight="1"
+            		android:visibility="visible">
+           			<TextView
+                		android:layout_width="wrap_content"
+                		android:layout_height="wrap_content"
+                		android:text="有效期："
+                		android:textSize="20sp" />
+           			<EditText
+                		android:id="@+id/expiry"
+                		android:layout_width="fill_parent"
+                		android:layout_height="wrap_content"
+                		android:hint="MMYY"
+                		android:maxLength="4"
+                		android:textColorHint="@color/blueviolet"
+                		android:numeric="integer"
+                		android:singleLine="true"
+                		android:textColor="#000000"
+                		android:textSize="20sp"/>
+        		</LinearLayout>
+        		<LinearLayout
+        		    android:id="@+id/ll_cvd"
+            		android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+            		android:orientation="vertical" 
+            		android:layout_weight="1"
+            		android:visibility="gone">
+		            <TextView
+                		android:layout_width="wrap_content"
+                		android:layout_height="wrap_content"
+                		android:text="CVD2:"
+                		android:textSize="20sp" />
+            		<EditText
+                		android:id="@+id/input_cvd"
+                		android:layout_width="fill_parent"
+                		android:layout_height="wrap_content"
+                		android:hint="CVD2"
+                		android:maxLength="4"
+                		android:textColorHint="@color/blueviolet"
+                		android:numeric="integer"
+                		android:singleLine="true"
+                		android:textColor="#000000"
+                		android:textSize="20sp"/>
+        		</LinearLayout>
+        	</LinearLayout>
+    	</LinearLayout>
+    	<!-- 分期项目 -->    
+    	<LinearLayout
+        	android:id="@+id/ll_installment"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical"
+        	android:visibility="gone"
+        	>
+        	<TextView 
+            	android:id= "@+id/text_spinner"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:text="分期项目"
+            	android:textSize="25sp"
+            	/>
+        	<!-- 定义一个下拉菜单 -->
+        	<Spinner
+            	android:id= "@+id/spinner_Item"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+           		/>
+        	<TextView 
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="分期数"
+            	android:textSize="20sp"
+            	/>
+        	<EditText
+            	android:id="@+id/item_no"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+        		android:numeric="integer"
+            	android:singleLine="true"
+            	android:textColor="#000000"
+            	android:textColorHint="@color/blueviolet"
+            	/>
+    	</LinearLayout>
+    
+    	<!-- next -->
+    	<LinearLayout
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="30dp"
+        	android:orientation="horizontal">
+        	<TextView
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_weight="1" />
+        	<Button
+            	android:id="@+id/next_step1"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_weight="3"
+            	android:gravity="center"
+            	android:text="@string/next"
+            	android:textSize="20sp" />
+	        <TextView
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_weight="1" />
+    	</LinearLayout>   
+	</LinearLayout>
+	</ScrollView>
+</LinearLayout>

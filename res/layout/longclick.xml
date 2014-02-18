@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Main" 
+    android:id="@+id/rltLayout">
+
+    <Button 
+        android:id="@+id/long_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="按我"
+        android:background="#ABCDEF"
+       	/>
+    
+    <Button 
+        android:id="@+id/long_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="100dp"
+        android:text="再按我"
+        android:background="#00AA00"/>
+
+</RelativeLayout>

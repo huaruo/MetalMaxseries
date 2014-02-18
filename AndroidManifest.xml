@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dana.startapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <!-- android:versionCode——整数值，代表应用程序代码的相对版本。 -->
+    <!-- 必须保证后续更新版的值要比这个大,应用程序和发布的服务不应该显示这个版本值给用户. -->
+    <!-- android:versionName——字符串值，代表应用程序的版本信息，需要显示给用户。 -->
+    <!-- 应用程序和发布的服务需要提取这个值显示给用户。 -->
+
+    <uses-sdk android:minSdkVersion="8" />
+    <!-- sdkVersion大于3时，SQLiteList的导航No.1显示不出来-->
+    <!-- android:targetSdkVersion="17" 如果有这句，HttpGetPost 会失败 -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/> android2.3及以上不支持 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"></uses-permission>
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission 
+		android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <!-- 往SDCard写入数据权限 -->
+	<uses-permission
+		android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+    <application
+        android:name="com.dana.modul.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        >
+        <service android:name="com.dana.modul.MyService" />
+        <activity
+            android:name="com.dana.startapp.Main"
+            android:label="@string/app_name" 
+            android:theme="@style/titlebarstyle"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dana.startapp.DoTransaction"
+            android:label="@string/app_name" 
+            android:theme="@style/titlebarstyle"
+            android:windowSoftInputMode="stateHidden"
+        />
+        <activity
+            android:name="com.dana.startapp.ViewAnimatorTest"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+        />
+         <activity
+            android:name="com.dana.startapp.SpinnerTest"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+        />
+         <activity
+            android:name="com.dana.startapp.ScrollTest"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+        />
+         <activity
+             android:name="com.dana.startapp.LongClick"
+             android:label="@string/app_name"
+             android:theme="@style/titlebarstyle"
+             />
+        <activity
+            android:name="com.dana.startapp.ExListView"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.ShowPopupWindow"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.ToastTest"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.AdjustBitmap"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.HandcentList"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.ListSort"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.CustomList"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.AppInfoDisplay"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.SetStyle"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.DoubleClick"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.BshSOView"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.HttpDemo"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.HttpGetPost"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.Webview"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.Upload"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.GetImage"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.Downloadapk"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.Keyevent"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.Motionevent"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.TableLayoutDemo"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.MTabTest"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.ImgSwitcherTest"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.ImageViewDraw"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.MediaTest"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.SurfaceViewTest"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.MultiSurfaceView"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.ActivityIntent1"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            />
+        <activity
+            android:name="com.dana.startapp.ActivityIntent2"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.ServiceTest"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <receiver android:name="clsReceiver2">
+			<intent-filter>
+				<action
+					android:name="com.dana.startapp.Internal_2"/>
+			</intent-filter>
+		</receiver>
+        <activity
+            android:name="com.dana.startapp.BroadcastReceiverTest"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.ParserXML"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.SQLiteTest"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.SQLiteListTest"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.AudioRecordTest"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.OscilloscopeTest"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.BluetoothReflect"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.TelephonyManagerTest"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.GridTab"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.AutoListView"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.ImageGalleryTest"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.SlidingDrawTest"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.AnimationTest"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.WindowManagerTest"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle"
+            />
+        <activity
+            android:name="com.dana.startapp.QQTab"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+        <activity
+            android:name="com.dana.startapp.QQTab1"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+         <activity
+            android:name="com.dana.startapp.ProgressBarTest"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+         <activity
+            android:name="com.dana.startapp.SeekBarTest"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+         <activity
+            android:name="com.dana.startapp.DialogTest"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+         <activity
+            android:name="com.dana.startapp.ScreenSwitch"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden"
+            />
+			<!-- 
+			如果项目不需要屏幕切换时可以再activity中设置：
+			1. android:screenOrientation="portrait" 始终以竖屏显示 
+			2. android:screenOrientation="landscape" 始终以横屏显示
+			 -->
+            <!-- 
+            configChanges有如下选项：  
+            1.orientation ：屏幕在纵向和横向间旋转，  
+            2.keyboardHidden：键盘显示或隐藏 ，
+            3.fontScale：用户变更了首选的字体大小   
+            4.locale ： 用户选择了不同的语言设定，
+            5.keyboard ：键盘类型变更，例如手机从12键盘切换到全键盘   
+            6.touchscreen或navigation：键盘或导航方式变化，
+             -->
+             <!-- 
+             	如果缺少了keyboardHidden选项 不能防止Activity的销毁，
+             	并且在之后提到的onConfigurationChanged事件中 只能捕获竖屏变横屏的事件 不能捕获横屏变竖屏
+              -->
+            <activity
+            android:name="com.dana.startapp.GameView"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+            <activity
+            android:name="com.dana.startapp.GameSurface"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+            <activity
+            android:name="com.dana.startapp.QPathDraw"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+            <activity
+            android:name="com.dana.startapp.HandleMessage"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+        
+    </application>
+
+</manifest>

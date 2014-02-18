@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 定义字符串 数组-->
+    <!-- Sub Menu Name -->
+    <string-array name = "items_array">
+        <item>LinearLayout</item>
+    	<item>ViewPager</item>
+    	<item>Spinner</item>
+    	<item>ScrollView</item>
+    	<item>LongClick</item>
+    	<item>ExList</item>
+    	<item>PopWindow</item>
+    	<item>Toast</item>
+    	<item>AdjustBitmap</item>
+    	<item>HandcentList</item>
+    	<item>ListSort</item>
+    	<item>CustomList</item>
+    	<item>AppInfo</item>
+    	<item>SetStyle</item>
+    	<item>DoubleClick</item>
+    	<item>BshSOView</item>
+    	<item>HttpDemo</item>
+    	<item>KeyEvent</item>
+    	<item>MotionEvent</item>
+    	<item>TableLayout</item>
+    	<item>Tab</item>
+    	<item>ImgSwitcherGallery</item>
+    	<item>ImgViewDraw</item>
+    	<item>MediaTest</item>
+    	<item>SurfaceView</item>
+    	<item>MultiSurfaceView</item>
+    	<item>ActivityIntent</item>
+    	<item>Service</item>
+    	<item>BroadcastReceiver</item>
+    	<item>ParserXML</item>
+    	<item>SQLite</item>
+    	<item>SQLiteList</item>
+    	<item>AudioRecord</item>
+    	<item>Oscilloscope</item>
+    	<item>BluetoothReflect</item>
+    	<item>TelephonyManager</item>
+    	<item>GridTab</item>
+    	<item>AutoListView</item>
+    	<item>ImageGallery</item>
+    	<item>SlidingDraw</item>
+    	<item>Animation</item>
+    	<item>WindowManager</item>
+    	<item>QQTab</item>
+    	<item>ProgressBar</item>
+    	<item>SeekBar</item>
+    	<item>Dialog</item>
+    	<item>ScreenSwitch</item>
+    	<item>GameView</item>
+    	<item>GameSurface</item>
+    	<item>QPathDraw</item>
+    	<item>HanldeMessage</item>
+    </string-array>
+</resources>

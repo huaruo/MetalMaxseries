@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+     >
+        <TextView
+        	android:id="@+id/animation_tv1"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="XML实现"
+      	  />
+    	<Button
+    	    android:id="@+id/animation_xmlalpha"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+      	  android:text="Alpha_Animation"
+      	  />
+    	<Button
+    	    android:id="@+id/animation_xmlscale"
+      	  	android:layout_width="wrap_content"
+      	  	android:layout_height="wrap_content"
+        	android:text="Scale_Animation"
+        	/>
+    	<Button
+        	android:id="@+id/animation_xmltranslate"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="Translate_Animation"
+        	/>
+    	<Button 
+        	android:id="@+id/animation_xmlrotate"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="Rotate_Animation"
+        	/>
+        <TextView
+        	android:id="@+id/animation_tv2"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="java code实现"
+        	/>
+        <Button
+            android:id="@+id/animation_javaalpha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alpha Animation"
+            />
+        <Button
+            android:id="@+id/animation_javascale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scale Animation"
+            />
+        <Button 
+            android:id="@+id/animation_javatranslate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Translate Animation"
+            />
+        <Button
+            android:id="@+id/animation_javarotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rotate Animation"
+            />
+</LinearLayout>

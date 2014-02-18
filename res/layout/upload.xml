@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/upload_layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+	<TextView
+        android:id="@+id/upload_TV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="文件上传范例:"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_x="10px"
+        android:layout_y="12px"
+        />
+    <TextView 
+        android:id="@+id/upload_TV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_x="10px"
+        android:layout_y="52px"
+        />
+    <TextView
+        android:id="@+id/upload_TV3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_x="10px"
+        android:layout_y="102px"
+        />
+    <Button
+        android:id="@+id/upload_btn"
+        android:layout_width="92px"
+        android:layout_height="49px"
+        android:text="上传"
+        android:textSize="15sp"
+        android:layout_x="90px"
+        android:layout_y="170px"
+        />
+        
+</AbsoluteLayout>
+    

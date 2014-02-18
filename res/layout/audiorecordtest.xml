@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <Button
+        android:id="@+id/audior_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始边录边放"
+        />
+    <Button
+        android:id="@+id/audior_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="停止"
+        />
+    <Button
+        android:id="@+id/audior_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="退出"
+        />
+    <TextView 
+        android:id="@+id/audior_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="程序音量调节"
+        />
+    <SeekBar
+        android:id="@+id/audior_skbvolume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

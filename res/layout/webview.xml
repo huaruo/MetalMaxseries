@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <!-- 建立一个TextView -->
+    <TextView 
+        android:id="@+id/webview_TV1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="浏览网页"
+        />
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <!-- 建立一个EditText -->
+    <EditText 
+        android:id="@+id/webview_ET1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_x="5px"
+        android:layout_y="32px"
+        android:layout_weight="19"
+        />
+    <!-- 建立一个ImageButton -->
+    <ImageButton
+        android:id="@+id/webview_IB1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:src="@drawable/go"
+        android:layout_x="275px"
+        android:layout_y="35px"
+        android:layout_weight="1"
+        />
+    </LinearLayout>
+    <!-- 建立一个WebView -->
+    <WebView 
+        android:id="@+id/webview_WV1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_x="7px"
+        android:layout_y="90px"
+        android:background="@color/black"
+        android:focusable="false"
+        />    
+</AbsoluteLayout>

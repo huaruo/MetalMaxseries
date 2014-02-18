@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<EditText 
+		android:id="@+id/path"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="http://i0.itc.cn/20101105/3ab_77a0625b_5eac_4b59_8b41_88530b0ec2f7_2.jpg"
+	/>
+	<Button
+		android:id="@+id/getimage"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="获取图片"
+	/>
+	<ImageView
+		android:id="@+id/imageview"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	/>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <Gallery 
+        android:id="@+id/ivgallery_gypreview"
+        android:layout_width="match_parent"
+        android:layout_height="143px"
+        android:layout_x="0px"
+        android:layout_y="51px"
+        />
+    <ImageView 
+        android:id="@+id/ivgallery_ivphoto"
+        android:layout_width="239px"
+        android:layout_height="218px"
+        android:layout_x = "38px"
+        android:layout_y="184px"
+        />
+
+</AbsoluteLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App information -->
+    <string name="app_name">I_MetalMaxseries</string>
+    <string name="action_settings">Settings</string>
+    
+    <!-- Custom Title -->
+    <string name="back">返回</string>
+    <string name="next">下一步</string>
+    <string name="custom_title">天心</string>    
+    
+    <!-- welcome prompt -->
+    <string name="list_prompt">Installed Application Info:</string>
+    
+    <!-- Dialog -->
+    <string name="manager_tv1">请设置新密码:</string>
+    <string name="manager_tv2">请确认密码:</string>
+    
+    <!-- http demo -->
+    <string name="http_title">HTTP POST与GET</string> 
+  	<string name="str_button1">以POST取回网页资料</string>
+  	<string name="str_button2">以GET取回网页资料</string> 
+  	<string name="url">http://</string>
+  	<string name="load">正在加载</string>
+  	<string name="str_button">按我上传</string>
+ 	<string name="str_title">文件上传范例：</string>
+  	<string name="str_text">远程安装程序(请输入URL)</string>
+
+</resources>

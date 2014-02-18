@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <SlidingDrawer
+        android:id="@+id/sd_sd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:handle="@+id/sd_handle"
+        android:content="@+id/sd_content"
+        >
+        <ImageButton
+            android:id="@+id/sd_handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image"
+            />
+        <LinearLayout 
+            android:id="@+id/sd_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <Button
+                android:id="@+id/sd_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                android:text="Button"
+                android:textColor="@color/green"
+                />
+            <TextView
+                android:id="@+id/sd_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="滑动式抽屉"
+                android:textSize="18px"
+                android:textColor="@color/teal"
+                android:gravity="center_vertical|center_horizontal"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+    </SlidingDrawer>
+</LinearLayout>
+
+<!-- 
+   二、重要属性
+   android:allowSingleTap：指示是否可以通过handle打开或关闭
+　　android:animateOnClick：指示是否当使用者按下手柄打开/关闭时是否该有一个动画。
+　　android:content：隐藏的内容
+　　android:handle：handle（手柄）
+
+三、重要方法
+　　animateClose()：关闭时实现动画。
+　　close()：即时关闭
+　　getContent()：获取内容
+　　isMoving()：指示SlidingDrawer是否在移动。
+　　isOpened()：指示SlidingDrawer是否已全部打开
+　　lock()：屏蔽触摸事件。
+　　setOnDrawerCloseListener(SlidingDrawer.OnDrawerCloseListener onDrawerCloseListener)：SlidingDrawer关闭时调用
+　　unlock()：解除屏蔽触摸事件。
+　　toggle()：切换打开和关闭的抽屉SlidingDrawer。
+ -->

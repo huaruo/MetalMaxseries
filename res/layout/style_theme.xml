@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <EditText 
+        android:id="@+id/style_et1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="默认样式"
+        />
+    <EditText 
+        android:id="@+id/style_et2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义样式一"
+        style="@style/et1"
+        />
+    <EditText 
+        android:id="@+id/style_et3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义样式二"
+        style="@style/et2"
+        />
+    <Button
+        android:id="@+id/style_btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="改变样式"
+        />
+    <Button
+        android:id="@+id/style_btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="改变主题"
+        />
+
+</LinearLayout>
